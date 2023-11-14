@@ -150,3 +150,44 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
+
+/* Base styles (already present) */
+/* ... Your existing CSS ... */
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and smaller devices */
+    header, section, footer {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    #menuButton {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+    }
+
+    /* Adjust image sizes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for mobile phones */
+    header h1, section h2, footer p {
+        font-size: 16px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    /* Adjust layout for smaller screens */
+    /* You can add more styles here as needed */
+}
