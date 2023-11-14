@@ -39,3 +39,64 @@ img {
 footer {
     font-size: 0.8em;
 }
+
+/* Menu Button */
+#menuButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hidden Navigation Menu */
+#navMenu.hidden {
+    display: none;
+}
+
+#navMenu {
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 60px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#navMenu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#navMenu ul li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+}
+
+#navMenu ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Dividers and Section Titles */
+section {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+section h2 {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-left: 5px solid #333;
+}
