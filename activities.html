@@ -10,14 +10,14 @@
     <header>
         <h1>Your Name</h1>
         <button id="menuButton">☰ Menu</button>
-        <nav id="navMenu" class="hidden">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="publications.html">Publications & Conferences</a></li>
-                <li><a href="research.html">Ongoing Research</a></li>
-                <li><a href="activities.html">Activities & Awards</a></li>
-            </ul>
-        </nav>
+        <div id="menuButton">☰</div>
+        <div id="sidebarMenu" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Home</a>
+            <a href="publications.html">Publications & Conferences</a>
+            <a href="research.html">Ongoing Research</a>
+            <a href="activities.html">Activities & Awards</a>
+        </div>
     </header>
     <section>
         <h2>Professional Activities</h2>
@@ -39,14 +39,18 @@
         <p>&copy; [Current Year] Your Name. All rights reserved.</p>
     </footer>
     <script>
-        document.getElementById('menuButton').addEventListener('click', function() {
-            var nav = document.getElementById('navMenu');
-            if (nav.classList.contains('hidden')) {
-                nav.classList.remove('hidden');
-            } else {
-                nav.classList.add('hidden');
-            }
-        });
+        function openNav() {
+            document.getElementById("sidebarMenu").style.width = "250px";
+        }
+    
+        function closeNav() {
+            document.getElementById("sidebarMenu").style.width = "0";
+        }
+    
+        document.getElementById('menuButton').onclick = function() {
+            openNav();
+        };
     </script>
+    
 </body>
 </html>
