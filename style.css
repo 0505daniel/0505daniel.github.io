@@ -122,6 +122,10 @@ section h2 {
     color: #818181;
     display: block;
     transition: 0.3s;
+    white-space: nowrap; /* Prevents text from wrapping onto the next line */
+    overflow: hidden;   /* Keeps the text within the bounds of its container */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text is too long */
+
 }
 
 .sidebar a:hover {
