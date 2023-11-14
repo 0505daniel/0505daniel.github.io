@@ -35,5 +35,15 @@
     <footer>
         <p>&copy; [Current Year] Your Name. All rights reserved.</p>
     </footer>
+    <script>
+        document.getElementById('menuButton').addEventListener('click', function() {
+            var nav = document.getElementById('navMenu');
+            if (nav.classList.contains('hidden')) {
+                nav.classList.remove('hidden');
+            } else {
+                nav.classList.add('hidden');
+            }
+        });
+    </script>
 </body>
 </html>
