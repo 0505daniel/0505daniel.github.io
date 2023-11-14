@@ -10,7 +10,7 @@
     <header>
         <h1>Your Name</h1>
         <button id="menuButton">☰ Menu</button>
-        <div id="menuButton">☰</div>
+        <div id="menuIcon">☰</div>
         <div id="sidebarMenu" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <a href="index.html">Home</a>
@@ -37,7 +37,7 @@
             document.getElementById("sidebarMenu").style.width = "0";
         }
     
-        document.getElementById('menuButton').onclick = function() {
+        document.getElementById('menuIcon').onclick = function() {
             openNav();
         };
     </script>
